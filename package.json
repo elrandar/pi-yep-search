@@ -18,6 +18,14 @@
     "url": "https://github.com/elrandar/pi-yep-search/issues"
   },
   "homepage": "https://github.com/elrandar/pi-yep-search#readme",
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "pi": {
     "extensions": [
       "./extensions/yep-search.ts"
