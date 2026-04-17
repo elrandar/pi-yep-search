@@ -1,6 +1,6 @@
 {
   "name": "pi-yep-search",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Yep Search API extension for pi — adds a web_search tool backed by https://platform.yep.com",
   "keywords": [
     "pi-package",

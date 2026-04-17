@@ -19,7 +19,9 @@ Use `-l` on `pi install` to write to project settings (`.pi/settings.json`) inst
 
 ## Authenticate
 
-Either run `/login` inside pi and pick **Yep Search** (OAuth + PKCE flow), or set one of these env vars before launching pi:
+Run `/login` inside pi and pick **Yep Search**. The extension starts a local loopback HTTP server on an ephemeral port (`http://127.0.0.1:<port>/yep-oauth-callback`), registers itself as an OAuth client via Dynamic Client Registration, opens the authorize URL in your browser, and captures the callback automatically. If the loopback can't be reached (sandbox, container without loopback access, etc.), the flow falls back to pasting the callback URL by hand.
+
+Or, skip OAuth entirely by setting one of these env vars before launching pi:
 
 ```bash
 export YEP_ACCESS_TOKEN=...   # preferred
