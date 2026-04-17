@@ -1,0 +1,31 @@
+{
+  "name": "pi-yep-search",
+  "version": "0.1.0",
+  "description": "Yep Search API extension for pi — adds a web_search tool backed by https://platform.yep.com",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "web-search",
+    "yep"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elrandar/pi-yep-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elrandar/pi-yep-search/issues"
+  },
+  "homepage": "https://github.com/elrandar/pi-yep-search#readme",
+  "pi": {
+    "extensions": [
+      "./extensions/yep-search.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@sinclair/typebox": "*"
+  }
+}
